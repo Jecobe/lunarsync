@@ -1,1 +1,15 @@
+// in vercel.json:
+// for example proxying /api/ → https://backend-endpoint/
 
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://backend-endpoint/:path*"
+    },
+    {
+      "source": "/api/:path*/",
+      "destination": "https://backend-endpoint/:path*/"
+    }
+  ]
+}
