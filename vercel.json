@@ -1,6 +1,3 @@
-// in vercel.json:
-// for example proxying /api/ → https://backend-endpoint/
-
 {
   "rewrites": [
     {
